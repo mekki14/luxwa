@@ -23,3 +23,4 @@ window.addEventListener("scroll",()=>
         navBar.classList.remove("fix-nav");
     }
 })
+

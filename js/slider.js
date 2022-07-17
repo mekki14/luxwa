@@ -32,6 +32,32 @@ const swiper2 = new Swiper(".slider-2",{
   }
 });
 
+var swiper = new Swiper(".mySwiper2", {
+  slidesPerView: 3,
+  spaceBetween: 30
+  ,
+  loop:true,
+  breakpoints:{
+    640:{
+      slidesPerView:2,
+    },
+    768:{
+      slidesPerView:3,
+    },
+    1024:{
+      slidesPerView:4,
+    }
+  }
+
+});
+var swiper4 = new Swiper(".slider-2", {
+  slidesPerView: "auto",
+  spaceBetween: 30,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+});
 
 const swiper3 = new Swiper(".slider-3",{
   loop:true,

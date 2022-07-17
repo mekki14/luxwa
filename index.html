@@ -10,15 +10,14 @@
     <!--  fontawsome files  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!--  swiper files  -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.3.0/swiper-bundle.min.js" integrity="sha512-+oUge+PHyEv6R7xjWkZ9zeGWbRLIs24P6/2afAClEZi+kZ2vsK+Di4Ud9ON39uAbkkcCrewO3ayzk2765bbPpw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
     <!--  boxicons files  -->
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
     <!--  Css files  -->
     <link rel="stylesheet" href="style.css">
     
     <!--  javaScript files  -->
-    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
-    
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
 </head>
 <body>
 <nav class="nav">
@@ -203,8 +202,8 @@
         <h2>Featured Products</h2>
         <span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. </span>
     </div>
-<div class="row container">
-    <div class="swiper-container slider-2">
+<div class="row container swiper-container">
+    <div class="swiper-wrapper  slider-2">
     
     <div class="swiper-slide">
         <div class="product">
@@ -307,15 +306,10 @@
             <div class="price">150$</div>
         </div>
     </div>
-
-<div class="arrows d-flex">
-    <div class="custom-prev d-flex">
-        <i class="bx-chevrons-left swiper-icon"></i>
-    </div>
-    <div class="custon-next d-flex">
-        <i class="bx bx-chevrons-right swiper-icon"></i>
-    </div>
 </div>
+    <div class="swiper-pagination"></div>
+
+
 </div>
 </section>
 
@@ -471,26 +465,16 @@
         <h2>Shop by brands</h2>
         <span>Lorem, ipsum dolor sit amet consectetur </span>
     </div>
-    <div class="brand-layout container">
-        <div class="swiper-container slider-3">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <h3>gucci</h3>
-                </div>
-                <div class="swiper-slide">
-                    <h3>hublot</h3>
-                </div>
-                <div class="swiper-slide">
-                    <h3>rolex</h3>
-                </div>
-                <div class="swiper-slide">
-                    <h3>fafi</h3>
-                </div>
-                <div class="swiper-slide">
-                    <h3>fer</h3>
-                </div>
-            </div>
-        </div>
+    <!-- Swiper -->
+    <div class="swiper mySwiper2">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="/images/Hublot-logo-journal-du-luxe.png" alt=""></div>
+        <div class="swiper-slide"><img src="/images/Hublot-logo-journal-du-luxe.png" alt=""></div>
+        <div class="swiper-slide"><img src="/images/Hublot-logo-journal-du-luxe.png" alt=""></div>
+        <div class="swiper-slide"><img src="/images/Hublot-logo-journal-du-luxe.png" alt=""></div>
+        <div class="swiper-slide"><img src="/images/Hublot-logo-journal-du-luxe.png" alt=""></div>
+      </div>
+      <div class="swiper-pagination"></div>
     </div>
 </section>
 
@@ -548,11 +532,7 @@
 </footer>
 
 
-
-
-
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.3.1/swiper-bundle.min.js" integrity="sha512-naEQG74IcOLQ6K/B1PmhIcZ4i3YE2FXs2zm603E1Q3shbron+PmYLg44/q+xAymD/RvskZ2H8l1Qa7I5qELlrg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
 <script src="./js/slider.js"></script>
     <script src="./js/index.js"></script>
