@@ -12,27 +12,7 @@ const swiper1 = new Swiper(".slider-1",{
   }
 });
 
-const swiper2 = new Swiper(".slider-2",{
-  grapbCursor: true,
-  spaceBetween:30,
-  navigation :{
-    nextEl:".custom-next",
-    prevEl:".custom-prev" 
-  },
-  breakpoints:{
-    640:{
-      slidesPerView:2,
-    },
-    768:{
-      slidesPerView:3,
-    },
-    1024:{
-      slidesPerView:2,
-    }
-  }
-});
-
-var swiper = new Swiper(".mySwiper2", {
+var swiper2 = new Swiper(".mySwiper1", {
   slidesPerView: 3,
   spaceBetween: 30
   ,
@@ -50,31 +30,22 @@ var swiper = new Swiper(".mySwiper2", {
   }
 
 });
-var swiper4 = new Swiper(".slider-2", {
-  slidesPerView: "auto",
-  spaceBetween: 30,
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
-});
 
-const swiper3 = new Swiper(".slider-3",{
+var swiper3 = new Swiper(".mySwiper2", {
+  slidesPerView: 3,
+  spaceBetween: 30
+  ,
   loop:true,
-  grapbCursor: true,
-  autoplay:{
-    delay:3500,
-    disableOnInteractionfalse,
-  },
-  spaceBetween:30,
-  slidesPerView:2,
   breakpoints:{
-    
+    640:{
+      slidesPerView:2,
+    },
     768:{
       slidesPerView:3,
     },
     1024:{
-      slidesPerView:2,
+      slidesPerView:4,
     }
   }
+
 });
